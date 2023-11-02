@@ -18,16 +18,16 @@ while True:
     if bandera > 1:
         while True:
             agregar_formulario = input(" ¿Desea crear otro registro? SI/NO: ")
-            try:
-                if agregar_formulario == "SI":
-                    break
-                elif agregar_formulario =="NO":
-                    terminar_app = True
-                    break
-                else:
-                    print("Respuesta no valida, responda SI, si desea continuar y NO si no desea hacerlo.")
-            except:
-                print("Entrada no valida")
+
+            if agregar_formulario == "SI":
+                break
+            elif agregar_formulario == "NO":
+                terminar_app = True
+                break
+            else:
+                print("Respuesta no valida, responda SI, si desea continuar y NO si no desea hacerlo.")
+
+
 
     if terminar_app:
         print("Registro esxitoso, gracias su participación.")
